@@ -5,12 +5,12 @@
 Summary:	Python package providing a simple parser generator for use with the mxTextTool
 Summary(pl):	Pakiet zawieraj±cy prosty generator parserów dla mxTextTool
 Name:		python-%{module}
-Version:	2.0.0
-Release:	2
+Version:	2.0.1a2
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{cap_name}-%{version}.zip
-# Source0-md5:	51d9f2d172032eb4065d2857706219e1
+# Source0-md5:	a270945935ec596ec87d5f5f19e806ad
 URL:		http://simpleparse.sourceforge.net/
 Requires:	python-mx-TextTools >= 2.1-0b5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
