@@ -6,7 +6,7 @@ Summary:	Python package providing a simple parser generator for use with the mxT
 Summary(pl):	Pakiet zawieraj±cy prosty generator parserów dla mxTextTool
 Name:		python-%{module}
 Version:	2.0.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{cap_name}-%{version}.zip
