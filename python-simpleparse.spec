@@ -11,6 +11,7 @@ License:	BSD
 Group:		Development/Languages/Python
 #Source0:	http://unc.dl.sourceforge.net/sourceforge/simpleparse/SimpleParse-2.0.0.zip
 Source0:	http://dl.sourceforge.net/sourceforge/%{module}/%{cap_name}-%{version}.zip
+# Source0-md5:	51d9f2d172032eb4065d2857706219e1
 URL:		http://simpleparse.sourceforge.net/
 Requires:	python-mx-TextTools >= 2.1-0b5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
