@@ -42,9 +42,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 %doc %{module}/doc %{module}/examples
-%dir %{py_sitedir}/%{module}
-%{py_sitedir}/%{module}/*.py[co]
-%dir %{py_sitedir}/%{module}/common
-%{py_sitedir}/%{module}/common/*.py[co]
-%dir %{py_sitedir}/%{module}/xml
-%{py_sitedir}/%{module}/xml/*.py[co]
+%dir %{py_sitescriptdir}/%{module}
+%{py_sitescriptdir}/%{module}/*.py[co]
+%dir %{py_sitescriptdir}/%{module}/common
+%{py_sitescriptdir}/%{module}/common/*.py[co]
+%dir %{py_sitescriptdir}/%{module}/xml
+%{py_sitescriptdir}/%{module}/xml/*.py[co]
