@@ -13,6 +13,7 @@ URL:		http://simpleparse.sourceforge.net/
 BuildRequires:	python-devel
 BuildRequires:	python-modules
 BuildRequires:	unzip
+%pyrequires_eq	python-libs
 Requires:	python-mx-TextTools >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,7 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-
 %doc %{module}/doc %{module}/examples
 %dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
