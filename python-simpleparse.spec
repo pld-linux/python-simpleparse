@@ -19,7 +19,7 @@ text-tagging engine directly from your EBNF grammar.
 
 %description -l pl
 SimpleParse pozwala na generowanie tabeli taguj±cych do u¿ytku z
-silnikiem taguj±cym tekst bezpo¶rendnio z gramatyk EBNF.
+silnikiem taguj±cym tekst bezpo¶rednio z gramatyk EBNF.
 
 %prep
 %setup -q -n %{cap_name}-%{version}
