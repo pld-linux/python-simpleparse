@@ -1,0 +1,51 @@
+%include	/usr/lib/rpm/macros.python
+%define 	module simpleparse
+%define 	cap_name SimpleParse
+
+Summary:	Python package providing a simple parser generator for use with the mxTextTool
+Summary(pl):	Pakiet zawieraj±cy prosty generator parserów dla mxTextTool
+Name:		python-%{module}
+Version:	2.0.0
+Release:	1
+License:	BSD
+Group:		Development/Languages/Python
+#Source0:	http://unc.dl.sourceforge.net/sourceforge/simpleparse/SimpleParse-2.0.0.zip
+Source0:	http://dl.sourceforge.net/sourceforge/%{module}/%{cap_name}-%{version}.zip
+URL:		http://simpleparse.sourceforge.net/
+Requires:	python-mx-TextTools >= 2.1-0b5
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+SimpleParse allows you to generate tagging tables for use with the
+text-tagging engine directly from your EBNF grammar.
+
+%description -l pl
+SimpleParse pozwala na generowanie tabeli taguj±cych do u¿ytku z
+silnikiem taguj±cym tekst bezpo¶rendnio z gramatyk EBNF.
+
+%prep
+%setup -q -n %{cap_name}-%{version}
+
+%build
+python setup.py build
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{py_sitedir}
+
+python setup.py install \
+        --root=$RPM_BUILD_ROOT --optimize=2
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+
+%doc %{module}/doc %{module}/examples
+%dir %{py_sitedir}/%{module}
+%{py_sitedir}/%{module}/*.py[co]
+%dir %{py_sitedir}/%{module}/common
+%{py_sitedir}/%{module}/common/*.py[co]
+%dir %{py_sitedir}/%{module}/xml
+%{py_sitedir}/%{module}/xml/*.py[co]
