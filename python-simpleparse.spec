@@ -1,16 +1,15 @@
 %include	/usr/lib/rpm/macros.python
 %define 	module simpleparse
 %define 	cap_name SimpleParse
-
 Summary:	Python package providing a simple parser generator for use with the mxTextTool
 Summary(pl):	Pakiet zawieraj±cy prosty generator parserów dla mxTextTool
 Name:		python-%{module}
-Version:	2.0.1a2
+Version:	2.0.1a3
 Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{cap_name}-%{version}.zip
-# Source0-md5:	a270945935ec596ec87d5f5f19e806ad
+# Source0-md5:	dffa19a7a21d342d56c3d1bf391c2c2d
 URL:		http://simpleparse.sourceforge.net/
 Requires:	python-mx-TextTools >= 2.1-0b5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
