@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.python
-%define 	module simpleparse
-%define 	cap_name SimpleParse
+%define 	module		simpleparse
+%define 	cap_name	SimpleParse
 Summary:	Python package providing a simple parser generator for use with the mxTextTool
 Summary(pl):	Pakiet zawieraj±cy prosty generator parserów dla mxTextTool
 Name:		python-%{module}
