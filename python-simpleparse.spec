@@ -10,6 +10,7 @@ Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/%{module}/%{cap_name}-%{version}.zip
 # Source0-md5:	dffa19a7a21d342d56c3d1bf391c2c2d
 URL:		http://simpleparse.sourceforge.net/
+BuildRequires:	unzip
 Requires:	python-mx-TextTools >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
