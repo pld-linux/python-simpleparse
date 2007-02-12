@@ -2,7 +2,7 @@
 %define 	module simpleparse
 %define 	cap_name SimpleParse
 Summary:	Python package providing a simple parser generator for use with the mxTextTool
-Summary(pl):	Pakiet zawieraj±cy prosty generator parserów dla mxTextTool
+Summary(pl.UTF-8):   Pakiet zawierajÄ…cy prosty generator parserÃ³w dla mxTextTool
 Name:		python-%{module}
 Version:	2.0.1a3
 Release:	1
@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 SimpleParse allows you to generate tagging tables for use with the
 text-tagging engine directly from your EBNF grammar.
 
-%description -l pl
-SimpleParse pozwala na generowanie tabeli taguj±cych do u¿ytku z
-silnikiem taguj±cym tekst bezpo¶rendnio z gramatyk EBNF.
+%description -l pl.UTF-8
+SimpleParse pozwala na generowanie tabeli tagujÄ…cych do uÅ¼ytku z
+silnikiem tagujÄ…cym tekst bezpoÅ›rendnio z gramatyk EBNF.
 
 %prep
 %setup -q -n %{cap_name}-%{version}
