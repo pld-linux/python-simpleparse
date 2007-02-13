@@ -1,7 +1,7 @@
 %define 	module		simpleparse
 %define 	cap_name	SimpleParse
 Summary:	Python package providing a simple parser generator for use with the mxTextTool
-Summary(pl.UTF-8):   Pakiet zawierający prosty generator parserów dla mxTextTool
+Summary(pl.UTF-8):	Pakiet zawierający prosty generator parserów dla mxTextTool
 Name:		python-%{module}
 Version:	2.0.1a3
 Release:	1
