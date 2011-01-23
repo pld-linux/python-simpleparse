@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/%{module}/%{cap_name}-%{version}.zip
 URL:		http://simpleparse.sourceforge.net/
 BuildRequires:	python-devel
 BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
 %pyrequires_eq	python-libs
 Requires:	python-mx-TextTools >= 2.0
