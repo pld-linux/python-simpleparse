@@ -30,16 +30,13 @@ silnikiem tagującym tekst bezpośrednio z gramatyk EBNF.
 %setup -q -n %{cap_name}-%{version}
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{py_sitedir}
 
-python setup.py install \
-        --skip-build \
-        --optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
 %py_comp $RPM_BUILD_ROOT%{py_sitedir}
