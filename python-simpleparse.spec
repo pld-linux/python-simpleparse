@@ -12,6 +12,7 @@ Group:		Development/Languages/Python
 Source0:	https://pypi.python.org/packages/source/S/SimpleParse/%{cap_name}-%{version}.tar.gz
 # Source0-md5:	d67aaceca86acc763d6eebee919cc8aa
 URL:		http://simpleparse.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 BuildRequires:	python-modules
 BuildRequires:	rpm-pythonprov
